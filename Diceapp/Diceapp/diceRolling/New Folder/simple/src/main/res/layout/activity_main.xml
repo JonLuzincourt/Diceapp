@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/lib-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/activity_main"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/newbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_leftDice"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="drawable/dice1"/>
+
+        <ImageView
+            android:id="@+id/image_rightDice"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="drawable/dice2"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/rollButton"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@color/colorPrimary"
+            android:text="@string/button_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/advanceButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rollButton"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/button_text2"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/customInput"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_below="@id/advanceButton"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="7-20"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/customButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advanceButton"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/customInput"
+            android:background="@color/colorPrimary"
+            android:text="Custom"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+</LinearLayout>

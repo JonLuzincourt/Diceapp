@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dice Rolling</string>
+    <string name="button_text">Roll!</string>
+    <string name="button_text2">Advanced Roll!</string>
+</resources>
